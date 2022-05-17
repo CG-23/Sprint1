@@ -1,0 +1,11 @@
+package Exercici2;
+
+public class Exercici2 {
+
+	public static void main(String[] args) {
+		Cotxe cotxe1 = new Cotxe("Volvo", "FR", 500);
+		
+		System.out.println(cotxe1);	
+	}
+
+}

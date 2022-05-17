@@ -1,0 +1,21 @@
+package Exercici2;
+
+public class Exercici2 {
+
+	public static void main(String[] args) {
+		
+		Cotxe.accelerar();
+		
+		Cotxe cotxe1 = new Cotxe("Volvo", "FR", 500);
+		
+		cotxe1.frenar();
+		
+		
+		System.out.println(cotxe1.getMarca());
+		System.out.println(cotxe1.getPOTENCIA());
+		System.out.println(cotxe1.getModel());
+		Cotxe.setModel("RS");
+		System.out.println(cotxe1.getModel());
+	}
+
+}
