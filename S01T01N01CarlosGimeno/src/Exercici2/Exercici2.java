@@ -6,6 +6,7 @@ public class Exercici2 {
 		
 		Cotxe.accelerar();
 //		No cal crear un objecte, es crida dsd la classe.		
+		
 		Cotxe cotxe1 = new Cotxe("Volvo", "FR", 500);
 		
 		cotxe1.frenar();

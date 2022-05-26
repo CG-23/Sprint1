@@ -4,15 +4,15 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class Venda {
 
-	private static int PreuTotal;
-	private static ArrayList <Producte> LlistaProductes;
+	private  int PreuTotal;
+	private  ArrayList <Producte> LlistaProductes;
 	
-	public Venda(String nom, int preu, int PreuTotal, ArrayList<Producte>LlistaProductes) {		
-		this.PreuTotal       = PreuTotal;
-		this.LlistaProductes = LlistaProductes;
+	public Venda() {
+		this.PreuTotal = 0;
+		this.LlistaProductes = new ArrayList<>();
 	}
 	
-	public static void IntroducirProducto(ArrayList <Producte> LlistaProductes) {
+	public void IntroducirProducto() {
 		String continuar, confirmacio = "si";
 		do {
 		Scanner sc = new Scanner(System.in);
@@ -27,13 +27,24 @@ public class Venda {
 		}while(confirmacio.equalsIgnoreCase(continuar));		
 	}
 	
-	public static int CalcularTotal(ArrayList <Producte> LlistaProductes){
-		
+	public int CalcularTotal()throws VendaBuidaException{
+			if(LlistaProductes.size()==0) {
+				throw new VendaBuidaException();
+			}
+			PreuTotal=0;
 			for(int i=0; i<LlistaProductes.size(); i++) {
 				
-				PreuTotal = PreuTotal + (LlistaProductes.get(i).getPreu());
+				PreuTotal +=(LlistaProductes.get(i).getPreu());
 		  	}	
 			return PreuTotal;
+	}
+
+	public int getPreuTotal() {
+		return PreuTotal;
+	}
+
+	public void setPreuTotal(int preuTotal) {
+		PreuTotal = preuTotal;
 	}
 	
 }

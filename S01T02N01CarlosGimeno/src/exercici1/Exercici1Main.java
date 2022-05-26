@@ -4,10 +4,18 @@ import java.util.Scanner;
 public class Exercici1Main {
 
 	public static void main(String[] args) {	
-		//XK HAY QUE CREAR ARRAYLIST EN EL MAIN ?????
-		ArrayList<Producte>LlistaProductes = new ArrayList<Producte>();
-	//	Venda.IntroducirProducto(LlistaProductes);
-		System.out.println(LlistaProductes);
-		System.out.println(Venda.CalcularTotal(LlistaProductes));
+		Venda ven1 = new Venda();
+		try {
+			ven1.CalcularTotal();
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		ven1.IntroducirProducto();
+		try {
+			ven1.CalcularTotal();
+			System.out.println(ven1.getPreuTotal());
+		}catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
 	}
 }
