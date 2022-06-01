@@ -19,7 +19,6 @@ class CalculoDniTest extends CalculoDni{
 				assertEquals(esperado, res);
 			}
 	}
-
 }
 
 

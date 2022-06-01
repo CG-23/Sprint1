@@ -1,0 +1,18 @@
+.classpath
+.gitignore
+.project
+.settings
+      org.eclipse.jdt.core.prefs
+bin
+      exercici1
+      exercici2
+      exercici3
+      exercici4
+      exercici5
+hola.txt
+src
+      exercici1
+      exercici2
+      exercici3
+      exercici4
+      exercici5
