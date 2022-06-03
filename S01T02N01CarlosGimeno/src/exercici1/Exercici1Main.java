@@ -1,6 +1,5 @@
 package exercici1;
-import java.util.ArrayList;
-import java.util.Scanner;
+
 public class Exercici1Main {
 
 	public static void main(String[] args) {	
@@ -16,6 +15,13 @@ public class Exercici1Main {
 			System.out.println(ven1.getPreuTotal());
 		}catch(Exception e) {
 			System.out.println(e.getMessage());
+		}
+		//Correció, llançament  del IndexOutBoundException.
+		try {
+			System.out.println(ven1.getProducte(100));
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+			e.printStackTrace();
 		}
 	}
 }

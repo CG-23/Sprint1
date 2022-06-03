@@ -1,7 +1,5 @@
 package exercici1;
 
-import java.util.ArrayList;
-
 public class VendaBuidaException extends Exception {
 	
 	public VendaBuidaException() {

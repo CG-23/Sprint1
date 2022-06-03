@@ -2,6 +2,8 @@ package exercic3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Random;
 import java.util.Scanner;
@@ -43,7 +45,15 @@ public class Main {
 				puntuacion += 1;
 			}
 	    }
-	    System.out.println("La puntuacion del usuario: "+nombre+" es "+puntuacion);
+	    // Aqui guardo en calificaciones.text el resultado del usuario
+	    try {
+			FileWriter myWriter = new FileWriter("calificaciones.txt");
+			myWriter.write("La puntuacion del usuario: "+nombre+" es "+puntuacion);
+			myWriter.close();
+			} catch (IOException e) {
+			e.printStackTrace();
+		}
+	    System.out.println("La puntuacion del usuario "+nombre+" es "+puntuacion);
 	}
 
 }

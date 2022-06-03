@@ -1,18 +1,29 @@
-.classpath
-.gitignore
-.project
-.settings
-      org.eclipse.jdt.core.prefs
-bin
-      exercici1
-      exercici2
-      exercici3
-      exercici4
-      exercici5
-hola.txt
-src
-      exercici1
-      exercici2
-      exercici3
-      exercici4
-      exercici5
+(F) .classpath   2022-05-30
+(F) .gitignore   2022-05-30
+(F) .project   2022-05-30
+(D) .settings   2022-05-30
+	(F) org.eclipse.jdt.core.prefs   2022-05-30
+(D) bin   2022-05-30
+	(D) exercici1   2022-05-30
+		(F) ListaDirectorio.class   2022-06-03
+	(D) exercici2   2022-05-31
+		(F) ListaDirectorio.class   2022-06-03
+	(D) exercici3   2022-05-31
+		(F) ListaDirectorio.class   2022-06-03
+	(D) exercici4   2022-06-01
+		(F) ListaDirectorio.class   2022-06-03
+	(D) exercici5   2022-06-01
+		(F) ListaDirectorio.class   2022-06-01
+(F) hola.txt   2022-06-03
+(F) serializar.ser   2022-06-01
+(D) src   2022-06-01
+	(D) exercici1   2022-05-30
+		(F) ListaDirectorio.java   2022-06-03
+	(D) exercici2   2022-05-31
+		(F) ListaDirectorio.java   2022-06-03
+	(D) exercici3   2022-05-31
+		(F) ListaDirectorio.java   2022-06-03
+	(D) exercici4   2022-06-01
+		(F) ListaDirectorio.java   2022-06-03
+	(D) exercici5   2022-06-01
+		(F) ListaDirectorio.java   2022-06-01
